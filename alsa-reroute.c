@@ -1,11 +1,11 @@
+/** Small ALSA rerouting tool.
+ * Author: Hans-Kristian Arntzen
+ *
+ * This code is released under the public domain. */
+
 #include <dlfcn.h>
 #include <alsa/asoundlib.h>
 #include <stdlib.h>
-
-#ifndef RTLD_NOW
-//#define RTLD_NOW ((void*)2)
-#error "RTLD_NOW not defined. :v"
-#endif
 
 int (*_snd_pcm_open)(snd_pcm_t **pcm, const char *name, snd_pcm_stream_t stream, int mode);
 
