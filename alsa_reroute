@@ -1,0 +1,4 @@
+#!/bin/sh
+
+LD_PRELOAD="libalsa-reroute.so" exec "$@"
+
