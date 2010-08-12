@@ -30,6 +30,8 @@ static void init_lib(void)
          if ( !_snd_pcm_open )
             fprintf(stderr, "ERROR: ALSA_REROUTE. Could not load libasound, all calls to snd_pcm_open() will fail!\n");
       }
+      else
+            fprintf(stderr, "ERROR: ALSA_REROUTE. Could not load libasound, all calls to snd_pcm_open() will fail!\n");
    }
    libinit++;
 }
