@@ -22,6 +22,6 @@ install:
 	install -m755 $(TARGET_SH) $(PREFIX)/bin/
 
 uninstall:
-	rm -rf $(PREFIX)$(TARGET)
-	rm -rf $(PREFIX)$(TARGET_SH)
+	rm -rf $(PREFIX)/$(TARGET)
+	rm -rf $(PREFIX)/$(TARGET_SH)
 
